@@ -5,6 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animations-CSS-SVG-Phone</title>
+
+    <style>
+        #skeleton {
+            animation: fadeInUp 1s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #bolt g {
+            opacity: 0;
+            animation: dropIn 8s ease forwards infinite;
+        }
+
+        @keyframes dropIn {
+            20% {
+                opacity: 0;
+                transform: translateY(-20%);
+            }
+            30%, 100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
     <svg width="728" viewBox="0 0 169 228" fill="none" xmlns="http://www.w3.org/2000/svg">
